@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+  <%- include('../partials/link'); %>
+    
+</head>
+
+<body>
+    <!-- Navbar-bootstrap -->
+  <%- include('../partials/navbar'); %>
+   
+
+    <!-- Main header -->
+    <div class="container-fluid main_header">
+      <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+              <div class="row">
+
+                  <!-- right side div -->
+                  <div class="col-md-12 col-12 main_header_left  align-items-center">
+                        
+
+                          <img src="images/7aqcppklh6bexoa70320.webp" alt="nabin" class="img-fluid w-75 errimg" title="nabin_texh">
+                        
+                          
+                  
+                  <!-- left side div -->
+                 
+                      <p>Welcome to weather app</p>
+                      <h1><%=errorMsg%></h1>
+                      <a href="/weather"><button>Go Back</button></a>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <footer>
+        <p>Created with 😒 by ClimateCompass</p>
+    </footer>
+</body>
+
+</html>

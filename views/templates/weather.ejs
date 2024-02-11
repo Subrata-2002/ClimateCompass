@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimateCompass</title>
+  <%- include('../partials/link'); %>
+    
+</head>
+
+<body>
+    <!-- Navbar-bootstrap -->
+  <%- include('../partials/navbar'); %>
+   
+    <!-- Main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter your city name" autocomplete="off">
+                        <input type="submit" value="Search" id="submit_btn">
+                    </form>
+                </div>
+
+                
+
+                    <div class="temp_information">
+                        <div class="top_layer">
+                            <p id="day">Tuesday</p>
+                            <p id="today_date">13 OCT</p>
+                        </div>
+                        <div class="main_layer">
+                            <p id="city_name">Get Output Here</p>
+                            <div class="middle_layer data_hide">
+                                <p id="temp">
+                                    <span id="temp_val">0</span>
+                                    <sup>o</sup>C &nbsp;
+                                    Cloudy
+                                </p>
+                                
+                                <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with 😒 by ClimateCompass</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
